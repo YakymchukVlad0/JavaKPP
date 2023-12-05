@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab7java.MainController">
+   <children>
+      <Button fx:id="startButton" layoutX="253.0" layoutY="235.0" mnemonicParsing="false" onAction="#start" prefHeight="31.0" prefWidth="104.0" text="Start" />
+      <Label fx:id="lcash" layoutX="185.0" layoutY="153.0" text="Cash amount: " />
+      <Label fx:id="lthreads" layoutX="185.0" layoutY="192.0" text="Threads number: " />
+      <TextField fx:id="tfCash" layoutX="281.0" layoutY="149.0" />
+      <TextField fx:id="tfThreads" layoutX="293.0" layoutY="187.0" />
+      <FlowPane fx:id="fpThreadControl" layoutX="1.0" layoutY="14.0" prefHeight="32" prefWidth="700" visible="false">
+         <children>
+            <Label prefHeight="33.0" prefWidth="56.0" text="Name:" visible="false" />
+            <Label prefHeight="17.0" prefWidth="61.0" text="State:" visible="false" />
+            <Label prefHeight="17.0" prefWidth="79.0" text="Priority: " visible="false" />
+            <Button mnemonicParsing="false" text="Run" visible="false" />
+            <Button mnemonicParsing="false" text="Stop" visible="false" />
+            <Button mnemonicParsing="false" text="Add" visible="false" />
+            <Button mnemonicParsing="false" text="Withdraw" visible="false" />
+         </children>
+      </FlowPane>
+      <Button visible="false" fx:id="startAllButton" layoutX="463.0" layoutY="14.0" mnemonicParsing="false" onAction="#startAll" prefHeight="25.0" prefWidth="123.0" text="Run all" />
+      <Button visible="false" fx:id="stopAllButton" layoutX="463.0" layoutY="60.0" mnemonicParsing="false" onAction="#stopAll" prefHeight="25.0" prefWidth="123.0" text="Stop all" />
+   </children>
+</AnchorPane>
